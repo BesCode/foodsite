@@ -1,0 +1,403 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    max-width: 1024px;
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #d8cfcf;
+    color: inherit;
+    margin: auto;
+}
+::placeholder{
+    color: white;
+}
+
+p{
+    text-align: justify;
+    font-size: 1em;
+}
+
+h1{
+    font-size: 4em;
+    color: white;
+}
+
+h3{
+    padding-bottom: .5em;
+    font-size: 1em;
+}
+h5{
+    color: #ebe5e5;
+    font-size: 1em;
+    font-weight: 0.4em;
+}
+.heading{
+    background-color: transparent;
+    width: 1024px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10em;
+    height: 4em;
+    position: fixed;
+}
+
+.nested{
+    display: flex;
+}
+
+.nestedLogo{
+    font-size: 2em;
+    color: #da5d23;
+}
+
+.nestedText >p{
+    color: #e9bbbb;
+    font-size:.9em ;
+}
+
+.bx-menu{
+    font-size: 2em ;
+    color: white;
+}
+
+.nestedLogo .bx-phone{ 
+    border: 1px solid black;
+    background-color: #e48d2a;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.first{
+    padding: 10em 0 5em 10em;
+    height: 30em;
+    background-image:url(https://images.unsplash.com/photo-1570038283490-0c2b8fe95b2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGNha2UlMjBzaG9wfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.firstHeading{
+    background-color: #e48d2a;
+    width: 20em;
+    height: 2.7em;
+    position: relative;
+}
+
+.firstHeading span{
+    position: absolute;
+    background-color:black;
+    height: 2.7em;
+    width: 3em;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    clip-path: polygon(0 0, 56% 0, 100% 100%, 0% 100%);
+}
+
+.firstHeading > h4{
+   text-align: center;
+   padding: 1em;
+}
+
+.secondGrid{
+    height: 25em;
+    color: white;
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    text-align: start;
+}
+
+.secondGrid .TextOne{
+    background-color:#e48d2a ;
+    padding: 5em 5em 2em 10em;
+}
+
+.secondGrid .TextTwo{
+    background-color: #3f3f3f;
+    padding: 5em 1em 2em 1em ;
+}
+
+.secondGrid .TextThree{
+    background-color: #af3103;
+    padding: 5em 10em 2em 1em ;
+}
+.third{
+    background-color: white;
+    color: black;
+    height: 25em;
+}
+
+.thirdGrid{
+    display: flex;
+    gap: 28em;
+    padding: 2em 10em 2em 10em;
+}
+
+.thirdText1 > h1{
+    display: flex;
+    color: #e7ad6a;
+}
+
+.thirdText1 span{
+    color: silver;
+    font-size: .7em;
+    font-weight: lighter;
+}
+
+.thirdHeading{
+    background-color: black;
+    width: 83em;
+    height: 2.7em;
+    position: relative;
+    margin: 2em 10em 2em 10em;
+}
+
+.thirdHeading > h4{
+    color: white;
+    padding: .5em 0 .5em 4em;
+    text-align: start;
+}
+
+.thirdHeading span{
+    position: absolute;
+    background-color:#e48d2a;
+    height: 2.7em;
+    width: 3em;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    clip-path: polygon(0 0, 56% 0, 100% 100%, 0% 100%);
+}
+
+.thirdText > p{
+    padding: 0 10em 2em 10em;
+}
+
+.fourth{
+    width: 100%;
+    background-color: #f5efd4;
+}
+
+.fourthGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    grid-gap: 1em;
+    padding: 0 10em 2em 10em;
+}
+
+.fourthGrid img{
+    margin-top: -5em;
+}
+
+.fourthGrid2{
+    display: flex;
+    gap: 5em;
+    padding: 2em 10em 2em 10em;
+    height: 100%;
+    align-items: stretch;
+    
+}
+.grid{
+    width: 40%;
+    position: relative;
+}
+
+.textInput{
+    width: 60%;
+}
+
+.grid img{
+    width: 100%;
+    height: 400px;
+}
+
+.grid span{
+    background-color: #e48d2a;
+    position: absolute;
+    margin-top: -2em;
+    right: -2em;
+    width: 8em;
+    height: 8em;
+    padding: 3em;
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+}
+
+.fourthGrid2 .textInput{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+.fourthGrid2 .textInput h3{
+    font-size: 2em;
+}
+
+.fourthGrid2 .textInput h5{
+    color: black;
+    font-size: 1em;
+    padding-bottom: 1em;
+}
+
+.fourthGrid2 .textInput > p{
+   font-size: inherit;
+}
+
+.boxFourInput{
+    display: flex;
+}
+
+.boxFourInput .long input{
+    width: 7em;
+
+}
+
+.boxFourInput input{
+    width: 6em;
+    margin-right: .2em;
+    background-color:#af3103;
+}
+
+.fourthHeading{
+    background-color: black;
+    width: 30em;
+    height: 2.7em;
+    position: relative;
+    margin: auto;
+    padding-bottom: 2em;
+
+}
+
+.fourthHeading > h4{
+    width: 100%;
+    color: white;
+    text-align: start;
+    padding: .3em 1em .5em 3em;
+    font-size: 1.5em;
+}
+
+.fourthHeading span{
+    position: absolute;
+    background-color:#e48d2a;
+    height: 2.7em;
+    width: 3em;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    clip-path: polygon(0 0, 56% 0, 100% 100%, 0% 100%);
+}
+
+.fifthGrid{
+    padding-top: 2em;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+.gridImgText{
+    background-color: white;
+    height: 20em;
+    display: flex;
+    position: relative;
+}
+
+.gridImgText img{
+    height: 100%;
+    width: 60%;
+    padding: .8em;
+}
+
+
+.gridImgText span{
+    height: 3em;
+    width: 5em;
+    background-color: #af3103;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: absolute;
+}
+
+.gridImgText .text{
+  display: flex;
+  padding: .8em;
+}
+
+.input{
+    padding: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input button{
+   width: 15%;
+   color: white;
+}
+
+.input button:nth-child(1){
+    background-color: #af3103;
+    height: 2em;
+}
+
+.input button:nth-child(2){
+    background-color: #e48d2a;
+    height: 2em;
+}
+
+.bottom{
+    display: flex;
+    gap: 1em;
+    padding: 2em; 
+    display: flex;
+    justify-content: center;
+    gap: 2em; 
+    background-color: white;
+}
+.circle div{
+    border: 1px solid #e48d2a;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+.circle h4{
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.circle p{
+    text-align: center;
+    max-width: 20ch;
+}
+.circle h6{
+    text-align: center;
+}
+
+.circle .bx{
+    color: #e48d2a;
+}
+
+
+
+
+
+
